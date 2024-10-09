@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kaisei+HarunoUmi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Red Social Simple</title>
+</head>
+<body>
+    <h1>Blog Nerd</h1>
+    <h2>¿Que estas pensando?</h2>
+    <form id="postForm" onsubmit="event.preventDefault(); postData();">
+        <label for="postTitle">Titulo</label>
+        <input type="text" id="postTitle" >
+        <label for="postBody">Comentario</label>
+        <textarea id="postBody" ></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- <h2>ver posteos</h2>
+    <button onclick="getData()">Ver posteos</button> -->
+    <ul id="postList"></ul>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
